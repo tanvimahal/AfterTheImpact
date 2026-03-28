@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576f44d2a924a8f4f87f0e86e5b7dcc2, type: 3}
+  m_Name: Item_SheepFactory
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItem
+  itemName: Sheep Factory
+  icon: {fileID: 5964462340188275201, guid: 40c1b447f761118448a65dc03117e3cf, type: 3}
+  prefab: {fileID: 6348665629757373267, guid: 3c8a5574bad2f7e40b4332ff6803112e, type: 3}
+  category: 1
+  costType: 0
+  costAmount: 20
+  hasRoundLimit: 1
+  maxPerRound: 5
+  xpReward: 16
+  sustainabilityChange: -10

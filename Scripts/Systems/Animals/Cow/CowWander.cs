@@ -1,0 +1,76 @@
+using UnityEngine;
+
+public class CowWander : MonoBehaviour
+{
+    [Header("Movement Settings")]
+    public float moveSpeed = 0.35f;
+    public float minMoveTime = 2f;
+    public float maxMoveTime = 4f;
+    public float idleTime = 2.5f;
+    public float wanderRadius = 3f;
+
+    private Rigidbody2D rb;
+    private Vector2 startPosition;
+    private Vector2 moveDirection;
+    private float timer;
+    private bool isMoving;
+    private SpriteRenderer sr;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        startPosition = transform.position;
+        StartIdle();
+    }
+
+    void Update()
+    {
+        timer -= Time.deltaTime;
+
+        if (timer <= 0f)
+        {
+            if (isMoving)
+                StartIdle();
+            else
+                StartMoving();
+        }
+
+        float distance = Vector2.Distance(transform.position, startPosition);
+        if (distance > wanderRadius)
+        {
+            moveDirection = (startPosition - (Vector2)transform.position).normalized;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (isMoving)
+        {
+            rb.linearVelocity = moveDirection * moveSpeed;
+
+            if (Mathf.Abs(moveDirection.x) > 0.1f)
+            {
+                sr.flipX = moveDirection.x < 0;
+            }
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+    }
+
+    void StartMoving()
+    {
+        isMoving = true;
+        timer = Random.Range(minMoveTime, maxMoveTime);
+        moveDirection = Random.insideUnitCircle.normalized;
+    }
+
+    void StartIdle()
+    {
+        isMoving = false;
+        timer = idleTime;
+        rb.linearVelocity = Vector2.zero;
+    }
+}
