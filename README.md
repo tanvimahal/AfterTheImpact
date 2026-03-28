@@ -1,3 +1,5 @@
+Version Control History:
+
 <img width="2568" height="661" alt="image" src="https://github.com/user-attachments/assets/02e2d394-742b-40ed-8df6-46fd9f4b6edc" />
 <img width="2581" height="684" alt="image" src="https://github.com/user-attachments/assets/4ea2cffe-607a-4020-9dc1-397e1a75d275" />
 <img width="2576" height="508" alt="image" src="https://github.com/user-attachments/assets/82fce428-0823-4e55-8cf3-537d44f378af" />
@@ -8,3 +10,9 @@
 <img width="3839" height="1978" alt="image" src="https://github.com/user-attachments/assets/f5eea269-1616-4e8e-83c4-476b22f5ef8a" />
 <img width="3839" height="1976" alt="image" src="https://github.com/user-attachments/assets/791e04e8-0a3c-4c14-a8b4-a76c09fad1b5" />
 <img width="3839" height="1428" alt="image" src="https://github.com/user-attachments/assets/4502437a-40a1-4d9b-841d-ea1f666d04c2" />
+
+AI Usage:
+
+AI tools were used throughout the project to support both development and learning. They helped clarify unfamiliar concepts in Unity, such as UI systems, object interactions, and event handling, which made it easier to implement features like the sustainability bar and object placement system. AI also assisted in generating starter code and debugging issues, allowing the team to progress more efficiently and focus on integrating gameplay features. Additionally, it was useful for brainstorming educational content related to sustainability, helping align the game with SDG9, SDG12, and SDG15.
+
+However, there were some challenges when using AI. Generated code did not always work immediately within our specific project setup and often required modification and testing to fit properly. In some cases, relying on AI suggestions without fully understanding them led to confusion, especially when debugging unexpected behavior. As a result, it was important to verify outputs, adapt them to our needs, and ensure we understood the underlying logic before implementation.
